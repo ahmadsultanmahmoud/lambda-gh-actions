@@ -24,7 +24,7 @@ jobs:
           CI: true
         run: |
           npm ci
-      - name: deploy lambda
+      - name: deploy lambda function
         run: |
           npx ncc build index.ts
           zip -j deploy.zip ./dist/*
